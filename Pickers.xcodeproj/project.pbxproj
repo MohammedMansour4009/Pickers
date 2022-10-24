@@ -21,6 +21,7 @@
 		047BDE832902C32200B51754 /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BDE822902C32200B51754 /* DependentComponentPickerViewController.swift */; };
 		047BDE852902C47200B51754 /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047BDE842902C47200B51754 /* statedictionary.plist */; };
 		047EA3BA2903E89200EAD126 /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EA3B92903E89200EAD126 /* CustomPickerViewController.swift */; };
+		047EA3BC29045FB700EAD126 /* CustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EA3BB29045FB700EAD126 /* CustomModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		047BDE822902C32200B51754 /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
 		047BDE842902C47200B51754 /* statedictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = statedictionary.plist; path = "../../MAPD714-LAB2/Pickers/statedictionary.plist"; sourceTree = "<group>"; };
 		047EA3B92903E89200EAD126 /* CustomPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
+		047EA3BB29045FB700EAD126 /* CustomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				047EA3B92903E89200EAD126 /* CustomPickerViewController.swift */,
+				047EA3BB29045FB700EAD126 /* CustomModel.swift */,
 			);
 			path = custom;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047EA3BC29045FB700EAD126 /* CustomModel.swift in Sources */,
 				047BDE7F2902BF4800B51754 /* DoubleComponentPickerViewController.swift in Sources */,
 				043757B12902968100870E70 /* DatePickerViewController.swift in Sources */,
 				043757AD2902968100870E70 /* AppDelegate.swift in Sources */,

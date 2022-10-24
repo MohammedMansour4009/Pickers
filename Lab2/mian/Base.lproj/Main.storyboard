@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="5" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="vUM-HE-Aut">
-                                <rect key="frame" x="35" y="47" width="325" height="230"/>
+                                <rect key="frame" x="35" y="47" width="320" height="216"/>
                                 <date key="minimumDate" timeIntervalSinceReferenceDate="252676740">
                                     <!--2009-01-03 11:59:00 +0000-->
                                 </date>
@@ -121,6 +121,10 @@
                                     <action selector="ss:" destination="BXn-Xg-b0X" eventType="touchUpInside" id="e0I-s6-Xey"/>
                                 </connections>
                             </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="aKm-He-fF3">
+                                <rect key="frame" x="5" y="552" width="390" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rI6-hZ-WCV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -239,14 +243,28 @@
         <!--Custom-->
         <scene sceneID="v1P-gH-Y0u">
             <objects>
-                <viewController id="uUE-55-VOq" sceneMemberID="viewController">
+                <viewController id="uUE-55-VOq" customClass="CustomPickerViewController" customModule="Pickers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NpC-u7-LBD">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLe-Hg-PAg">
+                                <rect key="frame" x="0.0" y="47" width="390" height="216"/>
+                            </pickerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YEW-MH-hiA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bLe-Hg-PAg" secondAttribute="trailing" id="Gda-UE-dK2"/>
+                            <constraint firstItem="bLe-Hg-PAg" firstAttribute="centerX" secondItem="NpC-u7-LBD" secondAttribute="centerX" id="SRe-t9-c3L"/>
+                            <constraint firstItem="bLe-Hg-PAg" firstAttribute="leading" secondItem="YEW-MH-hiA" secondAttribute="leading" id="nef-pV-gC0"/>
+                            <constraint firstItem="bLe-Hg-PAg" firstAttribute="top" secondItem="YEW-MH-hiA" secondAttribute="top" id="tI5-OM-UHe"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Custom" image="ic_tool" id="X24-oB-KI7"/>
+                    <connections>
+                        <outlet property="customUIPickerView" destination="bLe-Hg-PAg" id="IzT-6K-t5s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZm-tR-jae" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

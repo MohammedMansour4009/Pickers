@@ -16,7 +16,7 @@ class SingleComponentPickerViewController: UIViewController,UIPickerViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         
     }    
     

@@ -26,8 +26,7 @@ class DependentComponentPickerViewController: UIViewController ,UIPickerViewDele
         
         // Do any additional setup after loading the view.
         let bundle = Bundle.main
-        let plistURL = bundle.url(forResource:"statedictionary",
-                                             withExtension: "plist")
+        let plistURL = bundle.url(forResource:"statedictionary",withExtension: "plist")
         stateZips = NSDictionary.init(contentsOf: (plistURL)!) as? [String : [String]]
         let allStates = stateZips.keys
         states = allStates.sorted()
@@ -60,8 +59,7 @@ class DependentComponentPickerViewController: UIViewController ,UIPickerViewDele
             let selectedState = states[row]
             zips = stateZips[selectedState]
             dependentPicker.reloadComponent(zipComponent)
-            dependentPicker.selectRow(0, inComponent: zipComponent,
-                                      animated: true)
+            dependentPicker.selectRow(0, inComponent: zipComponent,animated: true)
         }
     }
     
